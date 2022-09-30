@@ -1,3 +1,4 @@
-div#titulo1{
+div#title1{
+    opacity: 0;
     transition: 2s ease-in-out;
 }
