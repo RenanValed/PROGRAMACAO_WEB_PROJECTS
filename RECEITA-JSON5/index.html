@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./estilo.css">
+    
 </head>
+<script src="script.js"></script>
 <style>
-    button#botaoCarregar{margin-left: 650px;margin-bottom: 20px; margin-top: 200px;padding: 4px;}
+    
 </style>
+
 <body>
-    <div><button id="botaoCarregar">Carregando Usuários...</button></div>
+    <div><button id="botaoCarregar">Carregar Usuários...</button></div>
 
       <div id="PerfisDiv">CLICK NO BOTÃO PARA CARREGAR USUÁRIOS</div>  
     
@@ -24,26 +27,11 @@
 
         const div = document.getElementById("PerfisDiv")
 
-        const itensHtml = cs.map( ({first_name,last_name,email,avatar}) => `<div> <img src="${avatar}">  ${first_name} ${last_name} -- ${email} </div>` ) 
+        const itensHtml = cs.map( ({first_name,last_name,email,avatar}) => `<div> <img src="${avatar}"><br/>Nome: ${first_name} ${last_name} <br/>Email: ${email} </div>` ) 
 
         div.innerHTML = `${itensHtml.join("\n")}`
     }
-
-
-
-    async function carregarCervejas(){
-
-        try{
-            let res = await fetch("https://random-data-api.com/api/v2/users?size=2&is_xml=true")
-
-            usuarios = await res.json()
-
-            carregarDiv(usuarios)
-        }catch(err){
-            document.getElementById("PerfisDiv").innerHTML = "Fudeu..."
-        }
-
-    }
+  
     
     let botao = document.getElementById("botaoCarregar")
     botao.addEventListener("click", () => carregarCervejas() )                 

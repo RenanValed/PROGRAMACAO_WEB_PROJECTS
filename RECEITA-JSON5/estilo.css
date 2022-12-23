@@ -6,23 +6,30 @@ div#PerfisDiv{
     padding: 50px;
     text-align: center;
     max-width: 50vw;
-    margin: auto
-;
+    margin: auto;
 }
+
 body{
-    background-image: url(https://services.meteored.com/img/article/el-telescopio-james-webb-revela-imagenes-ineditas-del-universo-profundo-1657641245588_1024.jpg);
-    scroll-behavior: smooth;
+    background-image: url(https://images.unsplash.com/photo-1578922427288-a47338083a57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=695&q=80);
     background-repeat: no-repeat;
     background-size:cover;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 button#botaoCarregar:hover{
     background-color: rgb(174, 243, 255);
     transition: ease-in-out 100ms;
     text-align: center;
-    padding: 4px;
+    padding: 6px;
     margin: auto;
-    margin-left: 650px;
-    margin-bottom: 20px;
-    margin-top: 200px;
-    padding: 4px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+
+button#botaoCarregar{
+    padding: 6px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    font-size: 22px;
 }
