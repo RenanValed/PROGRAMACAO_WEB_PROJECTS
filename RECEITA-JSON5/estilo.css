@@ -3,9 +3,11 @@ div#PerfisDiv{
     border-color: rgb(0, 0, 0);
     background-color: floralwhite;
     border-radius: 10px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding: 50px;
+    text-align: center;
+    max-width: 50vw;
+    margin: auto
+;
 }
 body{
     background-image: url(https://services.meteored.com/img/article/el-telescopio-james-webb-revela-imagenes-ineditas-del-universo-profundo-1657641245588_1024.jpg);
@@ -13,15 +15,14 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
 }
-button#botaoCarregar{
-    width: 200px;
-    height: 50px;
-    border: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+button#botaoCarregar:hover{
+    background-color: rgb(174, 243, 255);
+    transition: ease-in-out 100ms;
+    text-align: center;
+    padding: 4px;
+    margin: auto;
     margin-left: 650px;
+    margin-bottom: 20px;
     margin-top: 200px;
-    margin-bottom: 50px;
+    padding: 4px;
 }
