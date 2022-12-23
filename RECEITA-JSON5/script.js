@@ -1,13 +1,11 @@
-async function carregarCervejas(){
-
-    try{
-        let res = await fetch("https://random-data-api.com/api/v2/users?size=2&is_xml=true")
-
-        usuarios = await res.json()
-
-        carregarDiv(usuarios)
-    }catch(err){
-        document.getElementById("PerfisDiv").innerHTML = "Fudeu..."
+const carregarDiv = (cs, idDiv, theads = [], keys = []) => {
+    document.getElementById(idDiv).style.display = 'block';
+    let thead = document.querySelector(`#${idDiv} thead tr`);
+    thead.innerHTML = '';
+    for (th of theads) {
+        thead.innerHTML += `<th>${th}</th>`;    
     }
-
-}
+    let tbody = document.querySelector(`#${idDiv} tbody`);
+    const itensHtml = cs.map( item => `<tr>` + keys.map(key => `<td>${item[key]}</td>`).join("") + `</tr>`); 
+    tbody.innerHTML = `${itensHtml.join("\n")}`;
+ }
