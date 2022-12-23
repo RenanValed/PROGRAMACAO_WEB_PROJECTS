@@ -1,0 +1,41 @@
+table#tabelaDados{
+    background-color: floralwhite;
+    border-radius: 10px;
+    padding: 50px;
+    max-width: fit-content;
+    margin: auto;
+    border-collapse: collapse;
+
+}
+
+td{
+    text-align: center;
+    padding: 7px;
+    border: 1px solid rgb(0, 0, 0)
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1578922427288-a47338083a57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=695&q=80);
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+button#botaoCarregar:hover{
+    background-color: rgb(174, 243, 255);
+    transition: ease-in-out 100ms;
+    text-align: center;
+    padding: 6px;
+    margin: auto;
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+
+button#botaoCarregar{
+    padding: 6px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    font-size: 22px;
+}
